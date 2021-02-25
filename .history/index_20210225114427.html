@@ -22,7 +22,7 @@
         <div class="healthbar">
           <div
             class="healthbar__value"
-            :style="monsterBarStyles"
+            :style="{width: monsterHealth + '%'}"
           ></div>
         </div>
       </section>
@@ -30,7 +30,7 @@
         <h2>Your Health</h2>
         <div class="healthbar">
           <div class="healthbar__value"
-          :style="playerBarStyles"
+          :style="{width: monsterHealth + '%'}"
         ></div>
       </section>
       <section id="controls">
