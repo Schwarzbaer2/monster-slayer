@@ -17,9 +17,6 @@ const app = Vue.createApp({
     playerBarStyles() {
       return { width: this.playerHealth + '%' }
     },
-    mayUseSpecialAttack() {
-      return this.currentRound % 3 !== 0
-    },
   },
   methods: {
     attackMonster() {

@@ -17,9 +17,6 @@ const app = Vue.createApp({
     playerBarStyles() {
       return { width: this.playerHealth + '%' }
     },
-    mayUseSpecialAttack() {
-      return this.currentRound % 3 !== 0
-    },
   },
   methods: {
     attackMonster() {
@@ -33,7 +30,6 @@ const app = Vue.createApp({
       this.playerHealth -= attackValue
     },
     specialAttackMonster() {
-      this.currentRound++
       const attackValue = getRandomValue(10, 25)
       this.monsterHealth -= attackValue
       this.attackPlayer()
