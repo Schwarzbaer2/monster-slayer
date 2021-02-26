@@ -38,7 +38,6 @@ const app = Vue.createApp({
         this.winner = 'draw'
       } else if (value <= 0) {
         // monster lost
-        this.winner = 'player'
       }
     },
   },
